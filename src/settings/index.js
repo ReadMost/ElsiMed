@@ -18,8 +18,7 @@ export const HOSTS_LIST = [
 export const MAIN_HEADER_COLOR = 'black'
 export const MAIN_BACKGROUND_COLOR = 'white'
 
-export const MAIN_COLOR = '#00C6AE'
-// export const MAIN_COLOR = '#005F85'
+export const MAIN_COLOR = '#005F85'
 
 export const SIDE_BAR_COLOR = '#292D32'
 export const MAIN_BUTTONS_COLOR = '#3676DF'

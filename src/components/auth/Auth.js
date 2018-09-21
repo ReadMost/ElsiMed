@@ -102,14 +102,11 @@ export default class AuthScreen extends Component {
                 </View>
                 <View style={styles.titleContainer}>
                   <View style={{flexDirection: 'row'}}>
-                    <Text style={[styles.titleText, {fontFamily: 'georgia', paddingRight: 10}]}>AVICENNA</Text>
-                  </View>
-                  {/* <View style={{flexDirection: 'row'}}>
                     <Text style={[styles.titleText, {fontFamily: 'georgia', paddingRight: 10}]}>ELSI</Text>
                   </View>
                   <View style={{marginTop: -15, marginLeft: 35}}>
                     <Text style={[styles.titleText, {fontFamily: 'regular', fontSize: 30}]}>MED</Text>
-                  </View> */}
+                  </View>
                 </View>
                   <View style={{flexDirection: 'row'}}>
                     <Button

@@ -1,5 +1,8 @@
 {
   "name": "empty-project-template",
+  "version": "1.0.0",
+  "description": "for making online requests to hospital",
+  "author": "Duisebay Yerkebulan",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
