@@ -9,7 +9,8 @@ import {
   UIManager,
   KeyboardAvoidingView,
   ScrollView,
-  Button as NativeButton
+  Button as NativeButton,
+  Image
 } from 'react-native';
 import { Button } from 'react-native-elements'
 import SigninForm from './SigninForm'
@@ -20,7 +21,8 @@ import { MAIN_COLOR } from '../../settings';
 const SCREEN_WIDTH = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
-const BG_IMAGE = require('../../../assets/images/signin2.jpg');
+const BG_IMAGE = require('../../../assets/images/back.jpg');
+const LOGO = require('../../../assets/logo.png');
 
 // Enable LayoutAnimation on Android
 UIManager.setLayoutAnimationEnabledExperimental
@@ -101,12 +103,10 @@ export default class AuthScreen extends Component {
                     />
                 </View>
                 <View style={styles.titleContainer}>
-                  <View style={{flexDirection: 'row'}}>
-                    <Text style={[styles.titleText, {fontFamily: 'georgia', paddingRight: 10}]}>ELSI</Text>
-                  </View>
-                  <View style={{marginTop: -15, marginLeft: 35}}>
-                    <Text style={[styles.titleText, {fontFamily: 'regular', fontSize: 30}]}>MED</Text>
-                  </View>
+                <Image
+                  style={{width: 262, height: 95}}
+                  source={LOGO}
+                />
                 </View>
                   <View style={{flexDirection: 'row'}}>
                     <Button
@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
     left: 0,
     paddingTop: 20,
     width: SCREEN_WIDTH,
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: 'rgba(0,0,0,0)',
     justifyContent: 'center',
     alignItems: 'center',
   },

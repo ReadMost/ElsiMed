@@ -270,7 +270,7 @@ class AgendaScreen extends React.Component{
                 title = {language.title}
                 onSideBar={()=>{ this.props.navigation.goBack() }}/>
                 <Calendar 
-                showDaysAfterCurrent={10}  
+                showDaysAfterCurrent={120}  
                 showDaysBeforeCurrent = {0} 
                 LN = {Language[this.props.language].is}
                 onSelectDate={this.onSelectDate} />
