@@ -103,10 +103,7 @@ export default class AuthScreen extends Component {
                     />
                 </View>
                 <View style={styles.titleContainer}>
-                <Image
-                  style={{width: 262, height: 95}}
-                  source={LOGO}
-                />
+                  <Text style={[styles.titleText, {fontFamily: 'georgia', paddingRight: 10}]}>ElsiMed</Text>
                 </View>
                   <View style={{flexDirection: 'row'}}>
                     <Button

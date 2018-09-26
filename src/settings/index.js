@@ -8,9 +8,9 @@ export const  HOST = 'http://92.46.60.11:3838'
 //NEW versions 
 export const HOSTS_LIST = [
   'https://avicenna.online:1451',
-  'http://92.46.60.11:3838',
+ // 'http://92.46.60.11:3838',
   'https://alm.astonline.kz:1451',
-  'http://92.46.60.10:3838',
+ // 'http://92.46.60.10:3838',
 ]
 
 

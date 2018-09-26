@@ -18,7 +18,7 @@ async function setAppSettings(app_settings){
 }
 
 async function getAppSettings(){
-    //await clearTokens()
+    await clearTokens()
     const app_settings = await AsyncStorage.getItem('app_settings');
     let payload = {
         token: 'EMPTY',
@@ -148,24 +148,12 @@ function onFirstStartFulfilled(obj){
 export function onFirstStart(){
     return async dispatch => {
         dispatch(onFirstStartPending())
-        dispatch(await onOpenTokenSet())
+        //This is change to check IOS 12
+        //dispatch(await onOpenTokenSet())
         const payload = await getAppSettings()
         dispatch(onFirstStartFulfilled( payload ))
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
